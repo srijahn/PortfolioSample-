@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    opacity: 160%;
+    color: black;
+    background-color:gainsboro;
+    background-image: url(backgroundimage2.jpg);
+    background-size: cover;
+    }
+  
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .header{
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    position: fixed;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: transparent;
+    z-index: 100;
+    font-size: 1.55rem;
+    color: rgb(2, 64, 171);
+}
+.navbar a{
+    display: inline-block;
+    font-size: 1.35rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 35px;
+}
+.border :hover{
+    border: 1px dashed black;
+}
+  
+  .logo {
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    color:rgb(2, 64, 171);
+    font-size: 30px;
+  }
+  
+  .navbar a {
+    font-size: large;
+    margin-left: 20px;
+    margin-right: 10px;
+    color:black;
+  }
+  
+  .navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background:black;
+    border-radius: 5px;
+    transform: translateY(10px);
+    transition: .5s;
+    opacity: 0;
+    }
+  
+    .navbar a:hover::after{
+      transform: translateY(0);
+      opacity: 1;
+      transition-duration: 0.5s;
+    }  
+  
+    .navbar a:hover{
+      color:hotpink;
+    } 
+  
+    .Technical-bars {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start; 
+      height: 40vh; 
+    }
+    
+    .bar {
+      text-align:justify;
+      margin: 30px;
+      width: calc(30.33% - 60px); 
+    }
+    
+    .bar i {
+      font-size: 3em;
+    }
+    
+    .bar .info {
+      position: relative;
+      background-color:maroon;
+      border-radius: 40%;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .bar .info i {
+      font-size: 3em;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 20%);
+      color: white; 
+    }
+    
+    .bar .info span {
+      margin-top: 10px;
+      color: white; 
+    }
+  
+ 
+    .bar span {
+      display: block;
+    }
+  
+  .p-line span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+  
+  .sub-title {
+    margin-top: 10px;
+  }
+  
+  .skills-section {
+    text-align: center;
+    margin-top: 80px; 
+  }
+  
+  .my-skills{
+    margin-bottom: 10px;
+    font-size: 35px;
+  }
+  
+  .heading1{
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  
+  .bar:hover .info {
+    background-color: crimson 
+  }
+  
+  .bar:hover .info span {
+    color: black; 
+  }
